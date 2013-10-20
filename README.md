@@ -12,6 +12,8 @@ Example usage
 configure
 ---------
 
+{
+
 var root = Hogan.generate({
 	
 	name : 'api_one',
@@ -51,11 +53,13 @@ var root = Hogan.generate({
 	}
 });
 
-
+}
 
 
 use
 ---
+
+{
 
 root.getNoun1(key1, function(noun1) {
 
@@ -76,3 +80,5 @@ root.getNoun1(key1, function(noun1) {
 		}
 	});
 };
+
+}
