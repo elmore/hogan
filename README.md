@@ -20,13 +20,16 @@ configure
 		
 		name : 'api_one',
 		
-		protocol : 'http',
+		request : {
+		
+			protocol : 'http',
 
-		base : 'www.myhost.com/api/v1',
+			base : 'www.myhost.com/api/v1',
 		
-		request : function(req) {
-		
-			/* use whatever ajax lib you like */
+			handler : function(req) {
+			
+				/* use whatever ajax lib you like */
+			}
 		},
 				
 		domain : {
